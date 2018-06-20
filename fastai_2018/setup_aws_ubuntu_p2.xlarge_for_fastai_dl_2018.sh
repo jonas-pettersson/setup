@@ -11,8 +11,7 @@
 #    DESCRIPTION: Installs all needed for fastai deep learning course of 2018 
 #                 on a fresh ubuntu machine, for example on AWS Ubuntu Server 16.04 LTS (HVM),
 #                 ami-c7e0c82c (tested only on this).
-#                 This is the setup for the second edition of the course which
-#                 is based on pytorch. The original script was for setup on https://www.paperspace.com/
+#                 This is the setup for the second edition of the course based on pytorch.
 #
 #                 1) Install NVIDIA CUDA
 #                 2) Install NVIDIA CUDNN
@@ -25,8 +24,6 @@
 #    PREREQUISITES:
 #    - Linux / Ubuntu
 #
-#    PLEASE NOTE:
-#    - some things like qt-tools are probably not needed but didn't remove them yet
 #
 #    AUTHOR:  Jonas Pettersson, j.g.f.pettersson@gmail.com
 #    CREATED: 20/06/2018
@@ -44,10 +41,6 @@ sudo apt -y upgrade --force-yes -o Dpkg::Options::="--force-confdef" -o Dpkg::Op
 sudo apt -y autoremove
 
 sudo ufw allow 8888:8898/tcp
-
-# Probably not needed (?)
-# sudo apt -y install --force-yes -o Dpkg::Options::="--force-confdef" -o Dpkg::Options::="--force-confold" qtdeclarative5-dev qml-module-qtquick-controls
-# sudo add-apt-repository ppa:graphics-drivers/ppa -y
 
 sudo apt update
 
@@ -101,6 +94,7 @@ jupyter notebook --generate-config
 echo "c.NotebookApp.ip = '*'" >> ~/.jupyter/jupyter_notebook_config.py
 echo "c.NotebookApp.open_browser = False" >> ~/.jupyter/jupyter_notebook_config.py
 sudo apt install -y python-pip
+pip install --upgrade pip
 pip install ipywidgets
 jupyter nbextension enable --py widgetsnbextension --sys-prefix
 
