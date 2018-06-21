@@ -20,8 +20,8 @@ It was tested on the AWS AMI *ami-c7e0c82c.*
 This is the setup for the second edition of the course which is based on pytorch.
 The script installs NVIDIA CUDA, NVIDIA CUDNN, and Anaconda (Python 3.5).
 It then clones the [fastai](https://github.com/fastai/fastai) library from GitHub and
-installs all conda packages needed (included pytorch) as defined in the [environment yml](https://github.com/fastai/fastai/blob/master/environment.yml).
-Finally it downloads the data for the first example ([Cats and Dogs Kaggle competition](https://www.kaggle.com/c/dogs-vs-cats)
+installs all conda packages needed (including pytorch) as defined in the [environment yml](https://github.com/fastai/fastai/blob/master/environment.yml).
+Finally it downloads the data for the first example ([Cats and Dogs Kaggle competition](https://www.kaggle.com/c/dogs-vs-cats))
 and configures Jupyter Notebook
 
 ## How to use it
