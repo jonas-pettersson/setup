@@ -10,6 +10,12 @@ The script installs all needed to get started with lesson 1 of the fastai deep l
 It is intended for setup on a fresh ubuntu machine, for example on AWS Ubuntu Server 16.04 LTS (HVM).
 It was tested on the AWS AMI *ami-c7e0c82c.*
 
+## Prerequisites
+* About 32 GiB of disk space
+* A GPU (e.g. a p2.xlarge instance on AWS)
+* Linux (e.g. Ubuntu Server 16.04 LTS)
+* Security Profile allowing inbound traffic on port 8888 (Jupyter Notebook)
+
 ## How it works
 This is the setup for the second edition of the course which is based on pytorch.
 The script installs NVIDIA CUDA, NVIDIA CUDNN, and Anaconda (Python 3.5).
@@ -17,10 +23,6 @@ It then clones the [fastai](https://github.com/fastai/fastai) library from GitHu
 installs all conda packages needed (included pytorch) as defined in the [environment yml](https://github.com/fastai/fastai/blob/master/environment.yml).
 Finally it downloads the data for the first example ([Cats and Dogs Kaggle competition](https://www.kaggle.com/c/dogs-vs-cats)
 and configures Jupyter Notebook
-
-## Prerequisites
-* You will need bout 32 GiB of disk space
-* You will need a GPU
 
 ## How to use it
 1. Create an AWS instance (p2.xlarge, 32 GiB) and login
