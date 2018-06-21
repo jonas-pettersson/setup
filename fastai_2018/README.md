@@ -31,5 +31,5 @@ and configures Jupyter Notebook
 6. Login with ssh using the ```-L8888:localhost:8888``` flag, e.g. ```ssh -i .ssh/jonastest.pem ubuntu@10.141.6.162 -L8888:localhost:8888```. Now you can use localhost to connect to the 8888 port of the machine. See also this excellent [description from reshamas](https://github.com/reshamas/fastai_deeplearn_part1/blob/master/tools/aws_ami_gpu_setup.md)
 7. You can check NVIDIA status with ```nvidia-smi```
 8. ```jupyter notebook```
-9. Copy URL from Jupyter log and paste into your web browser, e.g. http://localhost:8888/?token=04089b6ccf89e723321097c9089ab52550f408c86f533608
+9. Copy URL from Jupyter log and paste into your web browser, e.g. ```http://localhost:8888/?token=04089b6ccf89e723321097c9089ab52550f408c86f533608```
 
