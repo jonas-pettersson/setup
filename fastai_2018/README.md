@@ -5,12 +5,12 @@ http://course.fast.ai/
 The script i based on the [Paperspace setup script](http://files.fast.ai/setup/paperspace) from the course
 with very minor adaptations.
 
-## What it tries to do
+## What it does
 The script installs all needed to get started with lesson 1 of the fastai deep learning course of 2018.
 It is intended for setup on a fresh ubuntu machine, for example on AWS Ubuntu Server 16.04 LTS (HVM).
 It was tested on the AWS AMI *ami-c7e0c82c.*
 
-## What it does
+## How it works
 This is the setup for the second edition of the course which is based on pytorch.
 The script installs NVIDIA CUDA, NVIDIA CUDNN, and Anaconda (Python 3.5).
 It then clones the [fastai](https://github.com/fastai/fastai) library from GitHub and
@@ -18,5 +18,18 @@ installs all conda packages needed (included pytorch) as defined in the [environ
 Finally it downloads the data for the first example ([Cats and Dogs Kaggle competition](https://www.kaggle.com/c/dogs-vs-cats)
 and configures Jupyter Notebook
 
-## Usage
-1. 
+## Prerequisites
+* You will need bout 32 GiB of disk space
+* You will need a GPU
+
+## How to use it
+1. Create an AWS instance (p2.xlarge, 32 GiB) and login
+2. ```wget https://raw.githubusercontent.com/jonas-pettersson/setup/master/fastai_2018/setup_aws_ubuntu_p2.xlarge_for_fastai_dl_2018.sh```
+3. ```chmod u+x setup_aws_ubuntu_p2.xlarge_for_fastai_dl_2018.sh```
+4. ```~/setup_aws_ubuntu_p2.xlarge_for_fastai_dl_2018.sh```
+5. Reboot
+6. Login with ssh using the ```-L8888:localhost:8888``` flag, e.g. ```ssh -i .ssh/jonastest.pem ubuntu@10.141.6.162 -L8888:localhost:8888```. Now you can use localhost to connect to the 8888 port of the machine. See also this excellent [description from reshamas](https://github.com/reshamas/fastai_deeplearn_part1/blob/master/tools/aws_ami_gpu_setup.md)
+7. You can check NVIDIA status with ```nvidia-smi```
+8. ```jupyter notebook```
+9. Copy URL from Jupyter log and paste into your web browser, e.g. http://localhost:8888/?token=04089b6ccf89e723321097c9089ab52550f408c86f533608
+
