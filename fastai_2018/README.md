@@ -1,6 +1,9 @@
 # Setup AWS instance for 2018 edition of fastai deep learning course
 http://course.fast.ai/
 
+## Why?
+Is a relevant question becasue you should probably rather use Paperspace, or at least when using AWS you should use the existing AMI named *fastai-part1v2-p2*. The problem I had was that the AMI was not available in the Frankfurt region (and I could not copy it). The second use case for the script would be if you have an own machine.
+
 ## Credits
 The script i based on the [Paperspace setup script](http://files.fast.ai/setup/paperspace) from the course
 with very minor adaptations.
