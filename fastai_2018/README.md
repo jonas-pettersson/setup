@@ -1,4 +1,5 @@
-# Setup AWS instance for 2018 edition of fastai deep learning course
+# Script for setup of an AWS instance for
+# fastai deep learning course, 2018 edition
 http://course.fast.ai/
 
 ## Why?
