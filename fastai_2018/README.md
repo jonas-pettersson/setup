@@ -25,12 +25,12 @@ Finally it downloads the data for the first example ([Cats and Dogs Kaggle compe
 and configures Jupyter Notebook
 
 ## How to use it
-1. Create an AWS instance (p2.xlarge, 32 GiB) and login
+1. Create an AWS instance (p2.xlarge, 32 GiB) and login. See for example this [description from reshamas] (https://github.com/reshamas/fastai_deeplearn_part1/blob/master/tools/aws_ami_gpu_setup.md)
 2. ```wget https://raw.githubusercontent.com/jonas-pettersson/setup/master/fastai_2018/setup_aws_ubuntu_p2.xlarge_for_fastai_dl_2018.sh```
 3. ```chmod u+x setup_aws_ubuntu_p2.xlarge_for_fastai_dl_2018.sh```
 4. ```~/setup_aws_ubuntu_p2.xlarge_for_fastai_dl_2018.sh```
 5. Reboot
-6. Login with ssh using the ```-L8888:localhost:8888``` flag, e.g. ```ssh -i .ssh/jonastest.pem ubuntu@10.141.6.162 -L8888:localhost:8888```. Now you can use localhost to connect to the 8888 port of the machine. See also this excellent [description from reshamas](https://github.com/reshamas/fastai_deeplearn_part1/blob/master/tools/aws_ami_gpu_setup.md)
+6. Login with ssh using the ```-L8888:localhost:8888``` flag, e.g. ```ssh -i .ssh/jonastest.pem ubuntu@10.141.6.162 -L8888:localhost:8888```. Now you can use localhost to connect to the 8888 port of the machine. See also the [description from reshamas](https://github.com/reshamas/fastai_deeplearn_part1/blob/master/tools/aws_ami_gpu_setup.md)
 7. You can check NVIDIA status with ```nvidia-smi```
 8. ```jupyter notebook```
 9. Copy URL from Jupyter log and paste into your web browser, e.g. ```http://localhost:8888/?token=04089b6ccf89e723321097c9089ab52550f408c86f533608```
