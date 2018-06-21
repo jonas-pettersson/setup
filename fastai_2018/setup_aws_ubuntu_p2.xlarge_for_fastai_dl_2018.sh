@@ -102,10 +102,6 @@ jupyter nbextension enable --py widgetsnbextension --sys-prefix
 sudo rm -rf downloads/*
 sudo rm -f fastai/data/dogscats.zip
 
-# Optional: Install Kaggle CLI (cliff needed for kaggle-cli)
-pip install --upgrade cliff
-pip install kaggle-cli
-
 echo
 echo ---
 echo - YOU NEED TO REBOOT YOUR COMPUTER NOW
