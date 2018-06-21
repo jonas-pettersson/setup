@@ -25,7 +25,7 @@ Finally it downloads the data for the first example ([Cats and Dogs Kaggle compe
 and configures Jupyter Notebook
 
 ## How to use it
-1. Create an AWS instance (p2.xlarge, 32 GiB) and login. See for example this [description from reshamas] (https://github.com/reshamas/fastai_deeplearn_part1/blob/master/tools/aws_ami_gpu_setup.md)
+1. Create an AWS instance (p2.xlarge, 32 GiB) and login. See for example this [description from reshamas](https://github.com/reshamas/fastai_deeplearn_part1/blob/master/tools/aws_ami_gpu_setup.md)
 2. ```wget https://raw.githubusercontent.com/jonas-pettersson/setup/master/fastai_2018/setup_aws_ubuntu_p2.xlarge_for_fastai_dl_2018.sh```
 3. ```chmod u+x setup_aws_ubuntu_p2.xlarge_for_fastai_dl_2018.sh```
 4. ```~/setup_aws_ubuntu_p2.xlarge_for_fastai_dl_2018.sh```
