@@ -7,13 +7,12 @@ I had the problem that the fastai AMI was not available in the Frankfurt AWS reg
 Another use case for this script would be if you have an own machine (not AWS).
 
 ## Credits
-The script i based on the [Paperspace setup script](http://files.fast.ai/setup/paperspace) from the course
+The script is based on the [Paperspace setup script](http://files.fast.ai/setup/paperspace) from the course
 with very minor adaptations.
 
 ## What it does
 The script installs all needed to get started with lesson 1 of the fastai deep learning course of 2018.
-It is intended for setup on a fresh ubuntu machine, for example on AWS Ubuntu Server 16.04 LTS (HVM).
-It was tested on the AWS AMI *ami-c7e0c82c.*
+It is intended for setup on a fresh ubuntu machine. It was tested on AWS Ubuntu Server 16.04 LTS (HVM).
 
 ## Prerequisites
 * About 32 GiB of disk space
