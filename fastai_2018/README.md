@@ -12,7 +12,7 @@ with very minor adaptations.
 
 ## What it does
 The script installs all needed to get started with lesson 1 of the fastai deep learning course of 2018.
-It is intended for setup on a fresh ubuntu machine. It was tested on AWS Ubuntu Server 16.04 LTS (HVM).
+It is intended for setup on a fresh Linux machine. It was tested on AWS Ubuntu Server 16.04 LTS (HVM).
 
 ## Prerequisites
 * About 32 GiB of disk space
