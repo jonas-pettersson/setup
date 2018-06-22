@@ -9,8 +9,7 @@
 #    USAGE:  ~/setup_aws_ubuntu_p2.xlarge_for_fastai_dl_2018
 #
 #    DESCRIPTION: Installs all needed for fastai deep learning course of 2018 
-#                 on a fresh ubuntu machine, for example on AWS Ubuntu Server 16.04 LTS (HVM),
-#                 ami-c7e0c82c (tested only on this).
+#                 on a fresh ubuntu machine, for example on AWS Ubuntu Server 16.04 LTS (HVM)
 #                 This is the setup for the second edition of the course based on pytorch.
 #
 #                 1) Install NVIDIA CUDA
@@ -24,9 +23,8 @@
 #    PREREQUISITES:
 #    - Linux / Ubuntu
 #
-#
 #    AUTHOR:  Jonas Pettersson, j.g.f.pettersson@gmail.com
-#    CREATED: 20/06/2018
+#    CREATED: 21/06/2018
 #============================================================
 
 set -e
