@@ -1,19 +1,18 @@
-# Setup AWS instance for 2018 edition of fastai deep learning course
+# Script for setup of an AWS instance for fastai deep learning course, 2018 edition
 http://course.fast.ai/
 
 ## Why?
-Is a relevant question becasue you should probably rather use [Paperspace](https://github.com/reshamas/fastai_deeplearn_part1/blob/master/tools/paperspace.md), or use the existing AWS AMI named *fastai-part1v2-p2* as described [here](https://github.com/reshamas/fastai_deeplearn_part1/blob/master/tools/aws_ami_gpu_setup.md).
-I had the problem that this AMI was not available in the Frankfurt AWS region (and I could not copy it).
+You should probably first consider using [Paperspace](https://github.com/reshamas/fastai_deeplearn_part1/blob/master/tools/paperspace.md) for the fastai course, or use an AWS instance based on the existing AMI named *fastai-part1v2-p2* as described [here](https://github.com/reshamas/fastai_deeplearn_part1/blob/master/tools/aws_ami_gpu_setup.md).
+I had the problem that the fastai AMI was not available in the Frankfurt AWS region (and I could not copy it).
 Another use case for this script would be if you have an own machine (not AWS).
 
 ## Credits
-The script i based on the [Paperspace setup script](http://files.fast.ai/setup/paperspace) from the course
+The script is based on the [Paperspace setup script](http://files.fast.ai/setup/paperspace) from the course
 with very minor adaptations.
 
 ## What it does
 The script installs all needed to get started with lesson 1 of the fastai deep learning course of 2018.
-It is intended for setup on a fresh ubuntu machine, for example on AWS Ubuntu Server 16.04 LTS (HVM).
-It was tested on the AWS AMI *ami-c7e0c82c.*
+It is intended for setup on a fresh ubuntu machine. It was tested on AWS Ubuntu Server 16.04 LTS (HVM).
 
 ## Prerequisites
 * About 32 GiB of disk space
